@@ -2,8 +2,7 @@
  Input: Nhập vào 2 số nguyên x và y
  Output: Hiển thị ra màn hình tổng, hiệu 2 số nguyên
 
- #include <stdio.h>// thư viện
- int main(){
+ #include <stdio.h> // thư viện{
      printf("Nhap x va y: ");
      scanf("%d%d",&x,&y);
      int tong = x + y;
@@ -16,9 +15,7 @@
  Input: Nhập vào cdai và crong
  Output: Hiển thị ra màn hình chuvi và dientich của hình chữ nhật
 
- #include <stdio.h>// thư viện
- #include <math.h>
- int main(){
+ {
      int cdai, crong;
      printf("Nhap chieu dai va chieu rong hinh chu nhat: ");
      scanf("%d%d",&cdai,&crong);
@@ -33,8 +30,7 @@
     Input: Nhập vào bán kính r
     Output: Hiển thị ra màn hình chu vi hình tròn
 Input: Nhập vào nhiệt độ C
-#include <stdio.h>
-int main(){
+{
     float c;
     printf("Nhap nhiet do C: ");
     scanf("%f",&c);
@@ -45,8 +41,7 @@ int main(){
 #Bài 4:XÂY DỰNG CHƯƠNG TRÌNH TÍNH ĐIỂM TRUNG BÌNH
 Input; Nhập vào từ bàn phím điểm môn Toán , Lý , Hóa
 
-#include <stdio.h>
-int main(){
+{
     float toan, ly, hoa;
     printf("Nhap diem mon Toan, Ly, Hoa: ");
     scanf("%f%f%f",&toan,&ly,&hoa);
@@ -56,8 +51,7 @@ int main(){
 }
 #Bài 5: TINH CHU VI DIEN TICH HINH TAM GIAC VUONG
 Input: Nhập vào 2 cạnh góc vuông a và b
-#include <stdio.h>
-int main(){
+{
     float a, b;
     printf("Nhap do dai 2 canh goc vuong a va b: ");
     scanf("%f%f",&a,&b);
