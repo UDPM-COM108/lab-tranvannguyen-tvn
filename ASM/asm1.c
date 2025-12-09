@@ -26,29 +26,27 @@ int main(){
                 printf("\nnhap vao so nguyen: ");
                 }break;
             case 2:{
-                int x, y, nho = 0, ucln, bcnn;
+                int x, y, a, b, ucln, bcnn;
+
                 printf("\nNhap vao x va y: ");
                 scanf("%d %d", &x, &y);
-                    if (x >y){
-                     nho = y;
-                    }
-                    else if(x<y){
-                     nho = x;
-                     }
-                    else{
-                     ucln = x;
-                     }
-                    for(int i=nho; i>=1; i--){
-                        if (x%i==0 && y%i==0){
-                             ucln = i;
-                            break;
-                             }
-                            }
-                     bcnn = (x*y)/ucln;
-                printf("\nBoi chung nho nhat cua %d va %d la: %d", x, y, bcnn);
-    
-    
-                 printf("\nUoc chung lon nhat cua %d va %d la: %d", x, y, ucln);
+
+                a = x;
+                b = y;
+
+                /* Tim UCLN */
+                while (b != 0) {
+                    int r = a % b;
+                    a = b;
+                    b = r;
+                }
+                ucln = a;
+
+                /* Tim BCNN */
+                bcnn = (x * y) / ucln;
+
+                printf("\nUCLN cua %d va %d la: %d", x, y, ucln);
+                printf("\nBCNN cua %d va %d la: %d", x, y, bcnn);
                 }break;
             case 3:{
                 int x, y, sogio;
