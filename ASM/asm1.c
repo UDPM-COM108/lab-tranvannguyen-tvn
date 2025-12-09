@@ -26,10 +26,49 @@ int main(){
                 printf("\nnhap vao so nguyen: ");
                 }break;
             case 2:{
-                printf("\nnhap vao 2 so nguyen: ");
+                int x, y, nho = 0, ucln, bcnn;
+                printf("\nNhap vao x va y: ");
+                scanf("%d %d", &x, &y);
+                    if (x >y){
+                     nho = y;
+                    }
+                    else if(x<y){
+                     nho = x;
+                     }
+                    else{
+                     ucln = x;
+                     }
+                    for(int i=nho; i>=1; i--){
+                        if (x%i==0 && y%i==0){
+                             ucln = i;
+                            break;
+                             }
+                            }
+                     bcnn = (x*y)/ucln;
+                printf("\nBoi chung nho nhat cua %d va %d la: %d", x, y, bcnn);
+    
+    
+                 printf("\nUoc chung lon nhat cua %d va %d la: %d", x, y, ucln);
                 }break;
             case 3:{
-                printf("\nnhap vao thoi gian hat karaoke: ");
+                int x, y, sogio;
+                double giagio, tong;
+                do{
+                    printf("Nhap gio bat dau va gio ket thuc: ");
+                    scanf("%d %d", &x, &y);
+                }while(x<12||y<12||x>23||y>23||x>y);
+                sogio = y - x;
+                if(sogio<=3){
+                    tong = 150 * sogio;
+                }
+                else if(sogio>3){
+                    tong = 150 * 3;
+                    tong += (150 * 0.7) * (sogio - 3);
+                }
+                if(x>=14 && x<=17){
+                    tong = tong * 0.9;
+                }
+                printf("Tong gia tien karaooke:%d", (int)tong);
                 }break;
             case 4:{
                 int k, tien=0;
